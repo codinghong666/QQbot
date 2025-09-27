@@ -10,55 +10,10 @@ import json
 from datetime import datetime
 import os
 from dotenv import load_dotenv
+from loadconfig import load_config
 
 
-def load_config(config_file="config.env"):
-    """
-    Load configuration from .env file using python-dotenv
-    
-    Args:
-        config_file: Path to configuration file
-        
-    Returns:
-        Configuration dictionary
-    """
-    # Load .env file
-    load_dotenv(config_file)
-    
-    # Get environment variables
-    token = os.getenv('TOKEN')
-    group_ids_str = os.getenv('GROUP_IDS')
-    message_count = int(os.getenv('MESSAGE_COUNT', '20'))
-    
-    # Validate required fields
-    if not token:
-        print("Error: TOKEN is required in config file")
-        return None
-    if not group_ids_str:
-        print("Error: GROUP_IDS is required in config file")
-        return None
-    
-    # Parse group IDs
-    group_ids = [gid.strip() for gid in group_ids_str.split(',') if gid.strip()]
-    groups = []
-    for group_id in group_ids:
-        groups.append({
-            'group_id': group_id,
-            "message_seq": "",
-            'message_count': message_count, 
-            "reverseOrder": "false"
-        })
-    
-    config = {
-        "api": {
-            "base_url": "http://localhost:3000",
-            "token": token,
-            "timeout": 10
-        },
-        "groups": groups
-    }
-    
-    return config
+
 
 
 def get_group_messages(group_id, count, config):
@@ -114,9 +69,13 @@ def parse_text_only(api_response):
     print(f"=== Group Message Text Content ({len(messages)} messages) ===\n")
     
     message_list = []
+    sender_list = []
+    message_id_list = []
     for message in messages:
         # Get sender info
         sender = message.get('sender', {})
+        message_id = message.get('message_id')
+        message_time = message.get('time')
         sender_name = sender.get('card', sender.get('nickname', 'Unknown User'))
         
         # Extract text content
@@ -134,10 +93,11 @@ def parse_text_only(api_response):
             text_content = '\n'.join(text_parts)
             
             # Format message
-            formatted_message = f"{sender_name}:\n    {text_content}"
-            
+            formatted_message = text_content
+            message_id_list.append(message_id)
+            sender_list.append(sender_name)
             message_list.append(formatted_message)
-    return message_list
+    return message_list, sender_list, message_id_list
 
 
 def get_and_parse_messages(config_file="config.env"):
@@ -171,10 +131,12 @@ def get_and_parse_messages(config_file="config.env"):
         
         if response:
             # Parse and output text content
-            message_list = parse_text_only(response)
+            message_list, sender_list, message_id_list = parse_text_only(response)
             results[group_id] = {
                 'group_name': group_name,
-                'messages': message_list
+                'messages': message_list,
+                'senders': sender_list,
+                'message_ids': message_id_list
             }
         else:
             print(f"Failed to get messages for group {group_name}")

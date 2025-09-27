@@ -1,0 +1,8 @@
+QQ Group Message Time Information Extraction Results
+Number of groups processed: 1
+============================================================
+
+Group: Group 1062848088
+----------------------------------------
+08:31:00:00:
+各位同学好，2024-2025学年拔尖计划2.0在校生学情调查已启动，问卷截止时间为8月31日，请大家近期抽出10分钟时间进行填写，问卷链接：https://wj.sjtu.edu.cn/q/mUgsujC8，谢谢！@全体成员

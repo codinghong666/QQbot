@@ -53,6 +53,7 @@ def extract_time_info(message_text):
     prompt = """请从以下QQ群消息中提取所有绝对时间信息，只输出时间，不要包含原文。
 
 任务要求：
+# 只输出时间，不要包含任何原文内容，不要输出任何无关内容，如果看起来不像需要执行的任务，只输出none
 1. 提取绝对时间信息，包括：
    - 具体日期（如：9月17日、12月25日、9月24日）
    - 具体时刻（如：18:00、17:00、14:30）
@@ -61,16 +62,14 @@ def extract_time_info(message_text):
    - 例如："明日下午（9月17日）17:00" → 提取 "09:17:17:00"
 3. 时间格式统一为：MM:DD:time
    - 如果只有日期没有时间，时间部分设为00:00
-   - 如果只有时间没有日期，需要根据上下文推断日期或跳过
 4. 每条时间信息单独一行输出
-5. 只输出时间，不要包含任何原文内容
 
 示例输出格式：
 09:24:18:00
 09:17:17:00
 09:24:00:00
 
-请分析以下QQ群消息："""
+请分析以下QQ群消息：\n"""
     
     # 构建完整的prompt
     full_prompt = prompt + "\n" + message_text
@@ -117,14 +116,3 @@ def extract_time_info(message_text):
     
     return content
 
-# 如果直接运行此文件，则进行测试
-if __name__ == "__main__":
-    # 测试用的消息
-    test_message = """24化学王言心:
-    各位同学大家好,本学期2024级第3周课堂考勤情况修改如下.如有异议,请于2025年9月24日(星期三)18:00前联系我."""
-    
-    print("Test message:")
-    print(test_message)
-    print("\nExtracted time information:")
-    result = extract_time_info(test_message)
-    print(result)
