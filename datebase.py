@@ -2,7 +2,7 @@ import sqlite3
 import os
 
 def create_table():
-    """创建数据库表，如果表已存在则跳过"""
+    """Create database table, skip if table already exists"""
     conn = sqlite3.connect('qq.db')
     cursor = conn.cursor()
     cursor.execute('''
@@ -18,7 +18,7 @@ def create_table():
     conn.close()
 
 def init_database():
-    """初始化数据库，如果数据库文件不存在则创建"""
+    """Initialize database, create if database file doesn't exist"""
     if not os.path.exists('qq.db'):
         print("Database file not found, creating new database...")
         create_table()

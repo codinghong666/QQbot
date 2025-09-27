@@ -13,7 +13,7 @@ def work():
     # Get messages from all configured groups
     results = get_and_parse_messages()
     
-    # 创建输出文件名（包含时间戳）
+    # Create output filename (with timestamp)
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
     output_file = f"output/qq_messages_analysis_{timestamp}.txt"
     
@@ -33,18 +33,18 @@ def work():
                 print(f"\n=== Processing Group: {group_name} ({message_count} messages) ===")
                 f.write(f"Group: {group_name}\n")
                 f.write("-"*40 + "\n")
-                # 二分查找第一个不存在的消息
+                # Binary search for first non-existent message
                 l, r = 0, message_count - 1
-                ans = message_count  # 默认从最后开始，如果都存在则跳过
+                ans = message_count  # Default to start from the end, skip if all exist
                 
                 while l <= r:
                     mid = (l + r) // 2
                     if check(group_id, group_data['message_ids'][mid]):
-                        # 当前消息不存在，记录位置并继续向左查找
+                        # Current message doesn't exist, record position and continue searching left
                         ans = mid
                         r = mid - 1
                     else:
-                        # 当前消息存在，向右查找
+                        # Current message exists, search right
                         l = mid + 1
                 for i in range(ans, message_count):
                     message_id, sender_name, message = group_data['message_ids'][i], group_data['senders'][i], group_data['messages'][i]
@@ -70,7 +70,7 @@ def work():
     else:
         print("No groups processed")
     
-    # 释放模型，释放GPU内存
+    # Release model, free GPU memory
     print("Releasing model from GPU...")
     unload_model()
 def see_data():

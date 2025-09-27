@@ -39,6 +39,7 @@ def load_config(config_file="config.env"):
             "reverseOrder": "false"
         })
     send_id = os.getenv('SEND_ID')
+    model = os.getenv('MODEL')
     config = {
         "api": {
             "base_url": "http://localhost:3000",
@@ -48,7 +49,8 @@ def load_config(config_file="config.env"):
         "groups": groups,
         "send_id": send_id,
         "work_time": work_time,
-        "send_time": send_time
+        "send_time": send_time,
+        "model": model
     }
     
     return config

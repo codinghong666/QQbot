@@ -1,19 +1,26 @@
 # QQ群聊DDL提醒器
 
-## 📋 项目简介
+## 项目简介
 
 一个基于NapCat和本地LLM的QQ群聊DDL（截止日期）提醒系统，能够自动抓取群消息、提取DDL信息并定时推送提醒。
 
-## 🔧 工作原理
+## 工作原理
 
 1. **消息抓取**: 使用[NapCat](https://github.com/NapNeko/NapCatQQ)抓取指定QQ群消息
 2. **信息提取**: 使用本地LLM提取DDL时间信息
 3. **数据存储**: 将提取的信息存储到本地数据库
 4. **定时推送**: 每天固定时间扫描数据库，对接近截止日期的DDL进行推送提醒
 
-## ⚙️ 安装配置
+
+## 安装配置
 
 ### 1. 环境准备
+
+需要至少4gb内存，8gb显存
+
+如果显存不够可以尝试更改参数更小的本地LLM
+
+如果不担心数据泄漏可以使用api
 
 在服务器上配置好 [NapCat](https://github.com/NapNeko/NapCatQQ)
 
@@ -25,7 +32,7 @@
 |------|------|------|
 | `TOKEN` | NapCat上的认证token | `1234567890111` |
 | `GROUP_IDS` | 需要抓取的群号，多个群用逗号分隔 | `114514,1919810` |
-| `MESSAGE_COUNT` | 每天抓取的消息条数 | `30` |
+| `MESSAGE_COUNT` | 每天从最新的消息向上抓取的消息条数 | `30` |
 | `SEND_ID` | 接收推送消息的QQ号 | `1919810` |
 | `WORK_TIME` | 大模型提取信息的时间 | `13:14` |
 | `SEND_TIME` | 发送提醒消息的时间 | `5:20` |
@@ -33,12 +40,14 @@
 **配置文件示例：**
 ```env
 # QQ Bot Configuration
+MODEL=Qwen/Qwen3-8B
 TOKEN=1234567890111
-GROUP_IDS=114514,1919810
-MESSAGE_COUNT=30
-SEND_ID=1919810
-WORK_TIME=13:14
-SEND_TIME=5:20
+GROUP_IDS=1062848088
+MESSAGE_COUNT=5
+SEND_ID=114514
+WORK_TIME=2:00
+SEND_TIME=8:50
+
 ```
 
 ### 3. 服务部署
@@ -59,7 +68,7 @@ sudo systemctl enable qqbot.service
 sudo systemctl start qqbot.service
 ```
 
-## 📊 服务管理
+## 服务管理
 
 ### 查看运行状态
 ```bash
@@ -83,7 +92,7 @@ sudo systemctl restart qqbot.service
 sudo systemctl disable qqbot.service
 ```
 
-## 📝 注意事项
+## 注意事项
 
 - 确保conda环境RL中已安装所需依赖
 - 定期检查日志文件 `minimal_scheduler.log` 和 `send.log`

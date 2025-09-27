@@ -38,3 +38,13 @@
 2025-09-27 19:35:06,728 - INFO - Work task completed
 2025-09-27 19:35:06,729 - INFO - Job "Work Task (trigger: cron[hour='19', minute='33'], next run at: 2025-09-28 19:33:00 HKT)" executed successfully
 2025-09-27 19:38:32,321 - INFO - Scheduler stopped
+2025-09-27 21:01:13,554 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-09-27 21:01:13,555 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-09-27 21:01:13,555 - INFO - Minimal Scheduler started - Work: 2:00, Send: 8:50
+2025-09-27 21:01:13,555 - INFO - Added job "Work Task" to job store "default"
+2025-09-27 21:01:13,555 - INFO - Added job "Send Task" to job store "default"
+2025-09-27 21:01:13,555 - INFO - Scheduler started
+2025-09-27 21:03:16,756 - INFO - Send task started
+2025-09-27 21:03:16,758 - ERROR - Send task failed
+2025-09-27 21:07:52,406 - INFO - Send task started
+2025-09-27 21:07:52,760 - INFO - Send task completed

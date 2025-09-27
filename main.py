@@ -2,8 +2,8 @@
 # -*- coding: utf-8 -*-
 """
 Minimal Resource QQ Bot Scheduler
-占用资源最少的定时任务调度器
-需要安装: pip install apscheduler
+Minimal resource consumption task scheduler
+Requires installation: pip install apscheduler
 """
 
 from apscheduler.schedulers.blocking import BlockingScheduler
@@ -15,7 +15,7 @@ from datebase import iter_data
 import logging
 
 
-# 配置日志
+# Configure logging
 logging.basicConfig(
     level=logging.INFO,
     format='%(asctime)s - %(levelname)s - %(message)s',
@@ -26,7 +26,7 @@ logging.basicConfig(
 )
 
 def run_work_task():
-    """执行work任务"""
+    """Execute work task"""
     try:
         logging.info("Work task started")
         work()
@@ -35,7 +35,7 @@ def run_work_task():
         logging.error(f"Work task failed: {e}")
 
 def run_send_task():
-    """执行send任务"""
+    """Execute send task"""
     try:
         logging.info("Send task started")
         check_all()
@@ -44,7 +44,7 @@ def run_send_task():
         logging.error(f"Send task failed: {e}")
 
 def main():
-    """主函数"""
+    """Main function"""
     config = load_config()
     if config is None:
         logging.error("Config error, cannot start")
@@ -53,14 +53,14 @@ def main():
     work_time = config.get('work_time', '02:00')
     send_time = config.get('send_time', '08:50')
     
-    # 解析时间
+    # Parse time
     work_hour, work_minute = map(int, work_time.split(':'))
     send_hour, send_minute = map(int, send_time.split(':'))
     
-    # 创建调度器
+    # Create scheduler
     scheduler = BlockingScheduler()
     
-    # 添加任务
+    # Add tasks
     scheduler.add_job(
         run_work_task,
         CronTrigger(hour=work_hour, minute=work_minute),

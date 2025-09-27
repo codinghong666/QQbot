@@ -1,12 +1,12 @@
 from transformers import AutoModelForCausalLM, AutoTokenizer, BitsAndBytesConfig
 import torch
 
-# 全局变量存储模型和分词器
+# Global variables to store model and tokenizer
 model = None
 tokenizer = None
 
 def load_model():
-    """加载模型和分词器到显卡，只执行一次"""
+    """Load model and tokenizer to GPU, execute only once"""
     global model, tokenizer
     
     if model is not None and tokenizer is not None:
@@ -16,44 +16,44 @@ def load_model():
     print("Loading model to GPU...")
     model_name = "Qwen/Qwen3-8B"
 
-    # 配置4-bit量化
+    # Configure 4-bit quantization
     quantization_config = BitsAndBytesConfig(
-        load_in_4bit=True,  # 启用4-bit量化
-        bnb_4bit_quant_type="nf4",  # 使用NF4数据类型，对正态分布权重更友好
-        bnb_4bit_compute_dtype=torch.float16,  # 使用float16进行计算
-        bnb_4bit_use_double_quant=True,  # 启用嵌套量化，可额外节省约0.5GB显存
+        load_in_4bit=True,  # Enable 4-bit quantization
+        bnb_4bit_quant_type="nf4",  # Use NF4 data type, more friendly to normal distribution weights
+        bnb_4bit_compute_dtype=torch.float16,  # Use float16 for computation
+        bnb_4bit_use_double_quant=True,  # Enable nested quantization, saves additional ~0.5GB VRAM
     )
 
-    # 加载分词器和量化模型
+    # Load tokenizer and quantized model
     tokenizer = AutoTokenizer.from_pretrained(model_name)
     model = AutoModelForCausalLM.from_pretrained(
         model_name,
         torch_dtype="auto",
         device_map="auto",
-        quantization_config=quantization_config  # 关键：传入量化配置
+        quantization_config=quantization_config  # Key: pass quantization config
     )
     print("Model loading completed")
 
 def extract_time_info(message_text):
     """
-    从消息文本中提取时间信息
+    Extract time information from message text
     
     Args:
-        message_text: 要分析的QQ群消息文本
+        message_text: QQ group message text to analyze
         
     Returns:
-        提取到的时间信息字符串
+        Extracted time information string
     """
     global model, tokenizer
     
-    # 确保模型已加载
+    # Ensure model is loaded
     if model is None or tokenizer is None:
         load_model()
     
     prompt = open("prompt.txt", "r").read() 
     print(f"prompt: {prompt}")
     
-    # 构建完整的prompt
+    # Build complete prompt
     full_prompt = prompt + "\n" + message_text
     
     messages = [
@@ -69,29 +69,29 @@ def extract_time_info(message_text):
     
     model_inputs = tokenizer([text], return_tensors="pt").to(model.device)
 
-    # 进行文本生成
+    # Perform text generation
     generated_ids = model.generate(
         **model_inputs,
         max_new_tokens=2048,
-        temperature=0.1,  # 降低温度，让输出更稳定
-        top_p=0.9,        # 核采样参数
-        do_sample=True,   # 启用采样
-        repetition_penalty=1.1  # 重复惩罚
+        temperature=0.1,  # Lower temperature for more stable output
+        top_p=0.9,        # Nucleus sampling parameter
+        do_sample=True,   # Enable sampling
+        repetition_penalty=1.1  # Repetition penalty
     )
     output_ids = generated_ids[0][len(model_inputs.input_ids[0]):].tolist() 
 
     content = tokenizer.decode(output_ids, skip_special_tokens=True).strip("\n")
     if "<think>" in content:
         content = content.split("<think>")[1].split("</think>")[1]
-    # 调试信息
+    # Debug information
     # print(f"Thinking content: {thinking_content[:100]}...")
     print(f"Final content: {content}")
     
-    # 检查是否包含时间信息
+    # Check if contains time information
     if not content or content.lower() in ['无', '没有', 'none', 'no', '无时间信息', '未检测到时间信息', 'no time information detected']:
         return None
     
-    # 检查是否包含时间格式（MM:DD:time）
+    # Check if contains time format (MM:DD:time)
     import re
     time_pattern = r'\d{2}:\d{2}:\d{2}:\d{2}'
     if not re.search(time_pattern, content):
@@ -100,7 +100,7 @@ def extract_time_info(message_text):
     return content
 
 def unload_model():
-    """释放模型和分词器，释放GPU内存"""
+    """Unload model and tokenizer, release GPU memory"""
     global model, tokenizer
     
     if model is not None:
@@ -113,10 +113,10 @@ def unload_model():
         tokenizer = None
         print("Tokenizer unloaded")
     
-    # 强制垃圾回收
+    # Force garbage collection
     import gc
     import torch
     gc.collect()
-    torch.cuda.empty_cache()  # 清空CUDA缓存
+    torch.cuda.empty_cache()  # Clear CUDA cache
     print("GPU memory cleared")
 
