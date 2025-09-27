@@ -50,26 +50,8 @@ def extract_time_info(message_text):
     if model is None or tokenizer is None:
         load_model()
     
-    prompt = """请从以下QQ群消息中提取所有绝对时间信息，只输出时间，不要包含原文。
-
-任务要求：
-# 只输出时间，不要包含任何原文内容，不要输出任何无关内容，如果看起来不像需要执行的任务，只输出none
-1. 提取绝对时间信息，包括：
-   - 具体日期（如：9月17日、12月25日、9月24日）
-   - 具体时刻（如：18:00、17:00、14:30）
-   - 完整日期时间（如：9月24日18:00、9月17日17:00）
-2. 即使包含相对时间词汇（如：明天、后天），只要后面有具体日期，也要提取
-   - 例如："明日下午（9月17日）17:00" → 提取 "09:17:17:00"
-3. 时间格式统一为：MM:DD:time
-   - 如果只有日期没有时间，时间部分设为00:00
-4. 每条时间信息单独一行输出
-
-示例输出格式：
-09:24:18:00
-09:17:17:00
-09:24:00:00
-
-请分析以下QQ群消息：\n"""
+    prompt = open("prompt.txt", "r").read() 
+    print(f"prompt: {prompt}")
     
     # 构建完整的prompt
     full_prompt = prompt + "\n" + message_text
@@ -90,19 +72,20 @@ def extract_time_info(message_text):
     # 进行文本生成
     generated_ids = model.generate(
         **model_inputs,
-        max_new_tokens=2048
+        max_new_tokens=2048,
+        temperature=0.1,  # 降低温度，让输出更稳定
+        top_p=0.9,        # 核采样参数
+        do_sample=True,   # 启用采样
+        repetition_penalty=1.1  # 重复惩罚
     )
     output_ids = generated_ids[0][len(model_inputs.input_ids[0]):].tolist() 
 
-    # 解析thinking内容
-    try:
-        # rindex finding 151668 (</think>)
-        index = len(output_ids) - output_ids[::-1].index(151668)
-    except ValueError:
-        index = 0
-
-    thinking_content = tokenizer.decode(output_ids[:index], skip_special_tokens=True).strip("\n")
-    content = tokenizer.decode(output_ids[index:], skip_special_tokens=True).strip("\n")
+    content = tokenizer.decode(output_ids, skip_special_tokens=True).strip("\n")
+    if "<think>" in content:
+        content = content.split("<think>")[1].split("</think>")[1]
+    # 调试信息
+    # print(f"Thinking content: {thinking_content[:100]}...")
+    print(f"Final content: {content}")
     
     # 检查是否包含时间信息
     if not content or content.lower() in ['无', '没有', 'none', 'no', '无时间信息', '未检测到时间信息', 'no time information detected']:
@@ -115,4 +98,25 @@ def extract_time_info(message_text):
         return None
     
     return content
+
+def unload_model():
+    """释放模型和分词器，释放GPU内存"""
+    global model, tokenizer
+    
+    if model is not None:
+        del model
+        model = None
+        print("Model unloaded from GPU")
+    
+    if tokenizer is not None:
+        del tokenizer
+        tokenizer = None
+        print("Tokenizer unloaded")
+    
+    # 强制垃圾回收
+    import gc
+    import torch
+    gc.collect()
+    torch.cuda.empty_cache()  # 清空CUDA缓存
+    print("GPU memory cleared")
 

@@ -1,0 +1,39 @@
+2025-09-27 19:01:02,080 - INFO - Send task started
+2025-09-27 19:01:12,084 - INFO - Send task completed
+2025-09-27 19:03:47,353 - INFO - Send task started
+2025-09-27 19:03:57,358 - INFO - Send task completed
+2025-09-27 19:07:00,268 - INFO - Send task started
+2025-09-27 19:07:10,273 - INFO - Send task completed
+2025-09-27 19:16:25,249 - INFO - Send task started
+2025-09-27 19:16:25,253 - ERROR - Send task failed
+2025-09-27 19:19:03,537 - INFO - Send task started
+2025-09-27 19:19:03,866 - INFO - Send task completed
+2025-09-27 19:19:21,557 - INFO - Send task started
+2025-09-27 19:19:31,562 - INFO - Send task completed
+2025-09-27 19:19:44,051 - INFO - Send task started
+2025-09-27 19:19:54,056 - INFO - Send task completed
+2025-09-27 19:20:00,321 - INFO - Send task started
+2025-09-27 19:24:24,712 - INFO - Send task started
+2025-09-27 19:24:24,717 - ERROR - Send task failed
+2025-09-27 19:25:30,721 - INFO - Send task started
+2025-09-27 19:25:30,723 - ERROR - Send task failed
+2025-09-27 19:29:33,941 - INFO - Send task started
+2025-09-27 19:29:34,272 - INFO - Send task completed
+2025-09-27 19:31:37,290 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-09-27 19:31:37,290 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-09-27 19:31:37,290 - INFO - Minimal Scheduler started - Work: 19:33, Send: 19:34
+2025-09-27 19:31:37,290 - INFO - Added job "Work Task" to job store "default"
+2025-09-27 19:31:37,290 - INFO - Added job "Send Task" to job store "default"
+2025-09-27 19:31:37,290 - INFO - Scheduler started
+2025-09-27 19:33:00,000 - INFO - Running job "Work Task (trigger: cron[hour='19', minute='33'], next run at: 2025-09-27 19:33:00 HKT)" (scheduled at 2025-09-27 19:33:00+08:00)
+2025-09-27 19:33:00,000 - INFO - Work task started
+2025-09-27 19:33:07,281 - INFO - NumExpr defaulting to 12 threads.
+2025-09-27 19:33:08,890 - INFO - We will use 90% of the memory on device 0 for storing the model, and 10% for the buffer to avoid OOM. You can set `max_memory` in to a higher value to use more memory (at your own risk).
+2025-09-27 19:34:00,000 - INFO - Running job "Send Task (trigger: cron[hour='19', minute='34'], next run at: 2025-09-27 19:34:00 HKT)" (scheduled at 2025-09-27 19:34:00+08:00)
+2025-09-27 19:34:00,000 - INFO - Send task started
+2025-09-27 19:34:00,001 - INFO - Send task started
+2025-09-27 19:34:00,343 - INFO - Send task completed
+2025-09-27 19:34:00,343 - INFO - Send task completed
+2025-09-27 19:34:00,343 - INFO - Job "Send Task (trigger: cron[hour='19', minute='34'], next run at: 2025-09-28 19:34:00 HKT)" executed successfully
+2025-09-27 19:35:06,728 - INFO - Work task completed
+2025-09-27 19:35:06,729 - INFO - Job "Work Task (trigger: cron[hour='19', minute='33'], next run at: 2025-09-28 19:33:00 HKT)" executed successfully
