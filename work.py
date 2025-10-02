@@ -1,5 +1,5 @@
 from simple_qq_parser import get_and_parse_messages
-from llm import extract_time_info, unload_model
+from llm import extract_time_info, unload_model, extract_time_info_by_api
 from datetime import datetime
 import os
 from datebase import find_if_exist, insert_data, remove_data, iter_data, init_database
@@ -52,7 +52,8 @@ def work():
                     print("Original message:")
                     print(message)
                     try:
-                        time_info = extract_time_info(message)
+                        # time_info = extract_time_info(message)
+                        time_info = extract_time_info_by_api(message)
                         if time_info is not None:
                             result_line = f"{time_info}:\n{message}"
                             print(result_line)

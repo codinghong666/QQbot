@@ -48,3 +48,189 @@
 2025-09-27 21:03:16,758 - ERROR - Send task failed
 2025-09-27 21:07:52,406 - INFO - Send task started
 2025-09-27 21:07:52,760 - INFO - Send task completed
+2025-09-28 02:00:00,000 - INFO - Running job "Work Task (trigger: cron[hour='2', minute='0'], next run at: 2025-09-28 02:00:00 HKT)" (scheduled at 2025-09-28 02:00:00+08:00)
+2025-09-28 02:00:00,000 - INFO - Work task started
+2025-09-28 02:00:00,060 - INFO - Work task completed
+2025-09-28 02:00:00,060 - INFO - Job "Work Task (trigger: cron[hour='2', minute='0'], next run at: 2025-09-29 02:00:00 HKT)" executed successfully
+2025-09-28 08:50:00,000 - INFO - Running job "Send Task (trigger: cron[hour='8', minute='50'], next run at: 2025-09-29 08:50:00 HKT)" (scheduled at 2025-09-28 08:50:00+08:00)
+2025-09-28 08:50:00,000 - INFO - Send task started
+2025-09-28 08:50:00,000 - INFO - Send task started
+2025-09-28 08:50:00,282 - INFO - Send task completed
+2025-09-28 08:50:00,282 - INFO - Send task completed
+2025-09-28 08:50:00,282 - INFO - Job "Send Task (trigger: cron[hour='8', minute='50'], next run at: 2025-09-29 08:50:00 HKT)" executed successfully
+2025-09-29 02:00:00,000 - INFO - Running job "Work Task (trigger: cron[hour='2', minute='0'], next run at: 2025-09-30 02:00:00 HKT)" (scheduled at 2025-09-29 02:00:00+08:00)
+2025-09-29 02:00:00,000 - INFO - Work task started
+2025-09-29 02:00:00,056 - INFO - Work task completed
+2025-09-29 02:00:00,056 - INFO - Job "Work Task (trigger: cron[hour='2', minute='0'], next run at: 2025-09-30 02:00:00 HKT)" executed successfully
+2025-09-29 08:50:00,000 - INFO - Running job "Send Task (trigger: cron[hour='8', minute='50'], next run at: 2025-09-30 08:50:00 HKT)" (scheduled at 2025-09-29 08:50:00+08:00)
+2025-09-29 08:50:00,000 - INFO - Send task started
+2025-09-29 08:50:00,001 - INFO - Send task started
+2025-09-29 08:50:00,001 - INFO - No messages found for today or yesterday
+2025-09-29 08:50:00,259 - INFO - Send task completed
+2025-09-29 08:50:00,259 - INFO - Send task completed
+2025-09-29 08:50:00,259 - INFO - Job "Send Task (trigger: cron[hour='8', minute='50'], next run at: 2025-09-30 08:50:00 HKT)" executed successfully
+2025-09-29 09:02:31,452 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-09-29 09:02:31,452 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-09-29 09:02:31,452 - INFO - Minimal Scheduler started - Work: 9:03, Send: 9:10
+2025-09-29 09:02:31,452 - INFO - Added job "Work Task" to job store "default"
+2025-09-29 09:02:31,452 - INFO - Added job "Send Task" to job store "default"
+2025-09-29 09:02:31,452 - INFO - Scheduler started
+2025-09-29 09:03:00,000 - INFO - Running job "Work Task (trigger: cron[hour='9', minute='3'], next run at: 2025-09-29 09:03:00 HKT)" (scheduled at 2025-09-29 09:03:00+08:00)
+2025-09-29 09:03:00,000 - INFO - Work task started
+2025-09-29 09:03:20,037 - WARNING - '(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /Qwen/Qwen3-8B/resolve/main/tokenizer_config.json (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x7f0b633def00>, 'Connection to huggingface.co timed out. (connect timeout=10)'))"), '(Request ID: 53dfcd4f-a003-47ef-9b10-da9cbede2703)')' thrown while requesting HEAD https://huggingface.co/Qwen/Qwen3-8B/resolve/main/tokenizer_config.json
+2025-09-29 09:03:20,037 - WARNING - Retrying in 1s [Retry 1/5].
+2025-09-29 09:03:41,075 - WARNING - '(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /Qwen/Qwen3-8B/resolve/main/tokenizer_config.json (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x7f0b633dfd10>, 'Connection to huggingface.co timed out. (connect timeout=10)'))"), '(Request ID: 58d58bc7-b981-44e6-8d73-d85050c46357)')' thrown while requesting HEAD https://huggingface.co/Qwen/Qwen3-8B/resolve/main/tokenizer_config.json
+2025-09-29 09:03:41,075 - WARNING - Retrying in 2s [Retry 2/5].
+2025-09-29 09:04:03,096 - WARNING - '(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /Qwen/Qwen3-8B/resolve/main/tokenizer_config.json (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x7f0b633dee10>, 'Connection to huggingface.co timed out. (connect timeout=10)'))"), '(Request ID: 6aff01c7-a0d7-4da2-8b11-797c19403db9)')' thrown while requesting HEAD https://huggingface.co/Qwen/Qwen3-8B/resolve/main/tokenizer_config.json
+2025-09-29 09:04:03,096 - WARNING - Retrying in 4s [Retry 3/5].
+2025-09-29 09:04:27,113 - WARNING - '(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /Qwen/Qwen3-8B/resolve/main/tokenizer_config.json (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x7f0b633df410>, 'Connection to huggingface.co timed out. (connect timeout=10)'))"), '(Request ID: 3c39d825-dcfd-4eac-8f45-d7d788948b88)')' thrown while requesting HEAD https://huggingface.co/Qwen/Qwen3-8B/resolve/main/tokenizer_config.json
+2025-09-29 09:04:27,113 - WARNING - Retrying in 8s [Retry 4/5].
+2025-09-29 09:04:55,145 - WARNING - '(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /Qwen/Qwen3-8B/resolve/main/tokenizer_config.json (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x7f0b633df560>, 'Connection to huggingface.co timed out. (connect timeout=10)'))"), '(Request ID: 8482b8b9-67ab-4d7a-bb76-7ce526d95b2b)')' thrown while requesting HEAD https://huggingface.co/Qwen/Qwen3-8B/resolve/main/tokenizer_config.json
+2025-09-29 09:04:55,145 - WARNING - Retrying in 8s [Retry 5/5].
+2025-09-29 09:05:23,167 - WARNING - '(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /Qwen/Qwen3-8B/resolve/main/tokenizer_config.json (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x7f0b633dfce0>, 'Connection to huggingface.co timed out. (connect timeout=10)'))"), '(Request ID: 73a4ebbe-b035-40e8-9ac2-7f02735a8894)')' thrown while requesting HEAD https://huggingface.co/Qwen/Qwen3-8B/resolve/main/tokenizer_config.json
+2025-09-29 09:09:06,357 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-09-29 09:09:06,357 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-09-29 09:09:06,357 - INFO - Minimal Scheduler started - Work: 9:10, Send: 9:16
+2025-09-29 09:09:06,357 - INFO - Added job "Work Task" to job store "default"
+2025-09-29 09:09:06,357 - INFO - Added job "Send Task" to job store "default"
+2025-09-29 09:09:06,357 - INFO - Scheduler started
+2025-09-29 09:10:00,000 - INFO - Running job "Send Task (trigger: cron[hour='9', minute='10'], next run at: 2025-09-29 09:10:00 HKT)" (scheduled at 2025-09-29 09:10:00+08:00)
+2025-09-29 09:10:00,000 - INFO - Running job "Work Task (trigger: cron[hour='9', minute='10'], next run at: 2025-09-29 09:10:00 HKT)" (scheduled at 2025-09-29 09:10:00+08:00)
+2025-09-29 09:10:00,000 - INFO - Work task started
+2025-09-29 09:10:00,000 - INFO - Send task started
+2025-09-29 09:10:00,001 - INFO - Send task started
+2025-09-29 09:10:00,001 - INFO - No messages found for today or yesterday
+2025-09-29 09:10:00,256 - INFO - Send task completed
+2025-09-29 09:10:00,257 - INFO - Send task completed
+2025-09-29 09:10:00,257 - INFO - Job "Send Task (trigger: cron[hour='9', minute='10'], next run at: 2025-09-30 09:10:00 HKT)" executed successfully
+2025-09-29 09:10:01,327 - INFO - NumExpr defaulting to 12 threads.
+2025-09-29 09:10:02,380 - INFO - We will use 90% of the memory on device 0 for storing the model, and 10% for the buffer to avoid OOM. You can set `max_memory` in to a higher value to use more memory (at your own risk).
+2025-09-29 09:10:12,332 - WARNING - '(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /Qwen/Qwen3-8B/resolve/main/config.json (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x7f0b634166f0>, 'Connection to huggingface.co timed out. (connect timeout=10)'))"), '(Request ID: 100005f0-7d4a-46cd-bb4f-49ec323dfcbf)')' thrown while requesting HEAD https://huggingface.co/Qwen/Qwen3-8B/resolve/main/config.json
+2025-09-29 09:10:12,332 - WARNING - Retrying in 1s [Retry 1/5].
+2025-09-29 09:10:33,355 - WARNING - '(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /Qwen/Qwen3-8B/resolve/main/config.json (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x7f0b633dd340>, 'Connection to huggingface.co timed out. (connect timeout=10)'))"), '(Request ID: a0eebbde-a802-452d-bf2a-babadf958ec9)')' thrown while requesting HEAD https://huggingface.co/Qwen/Qwen3-8B/resolve/main/config.json
+2025-09-29 09:10:33,355 - WARNING - Retrying in 2s [Retry 2/5].
+2025-09-29 09:10:54,575 - INFO - Scheduler stopped
+2025-09-29 09:10:55,376 - WARNING - '(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /Qwen/Qwen3-8B/resolve/main/config.json (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x7f0b633debd0>, 'Connection to huggingface.co timed out. (connect timeout=10)'))"), '(Request ID: 05af9049-401a-42a4-b103-fcb64c529d93)')' thrown while requesting HEAD https://huggingface.co/Qwen/Qwen3-8B/resolve/main/config.json
+2025-09-29 09:10:55,376 - WARNING - Retrying in 4s [Retry 3/5].
+2025-09-29 09:11:19,395 - WARNING - '(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /Qwen/Qwen3-8B/resolve/main/config.json (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x7f0b633dfb30>, 'Connection to huggingface.co timed out. (connect timeout=10)'))"), '(Request ID: 99cb6ac9-1673-4611-980e-ecb5f092e70b)')' thrown while requesting HEAD https://huggingface.co/Qwen/Qwen3-8B/resolve/main/config.json
+2025-09-29 09:11:19,395 - WARNING - Retrying in 8s [Retry 4/5].
+2025-09-29 09:11:21,640 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-09-29 09:11:21,640 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-09-29 09:11:21,640 - INFO - Minimal Scheduler started - Work: 9:12, Send: 9:18
+2025-09-29 09:11:21,640 - INFO - Added job "Work Task" to job store "default"
+2025-09-29 09:11:21,640 - INFO - Added job "Send Task" to job store "default"
+2025-09-29 09:11:21,640 - INFO - Scheduler started
+2025-09-29 09:12:00,000 - INFO - Running job "Work Task (trigger: cron[hour='9', minute='12'], next run at: 2025-09-29 09:12:00 HKT)" (scheduled at 2025-09-29 09:12:00+08:00)
+2025-09-29 09:12:00,000 - INFO - Work task started
+2025-09-29 09:12:01,319 - INFO - NumExpr defaulting to 12 threads.
+2025-09-29 09:12:02,218 - INFO - We will use 90% of the memory on device 0 for storing the model, and 10% for the buffer to avoid OOM. You can set `max_memory` in to a higher value to use more memory (at your own risk).
+2025-09-29 09:12:46,154 - INFO - Work task completed
+2025-09-29 09:12:46,156 - INFO - Job "Work Task (trigger: cron[hour='9', minute='12'], next run at: 2025-09-30 09:12:00 HKT)" executed successfully
+2025-09-29 09:18:00,000 - INFO - Running job "Send Task (trigger: cron[hour='9', minute='18'], next run at: 2025-09-30 09:18:00 HKT)" (scheduled at 2025-09-29 09:18:00+08:00)
+2025-09-29 09:18:00,000 - INFO - Send task started
+2025-09-29 09:18:00,000 - INFO - Send task started
+2025-09-29 09:18:00,001 - WARNING - Invalid time format: 07:01:10:00-09:31:16:00
+2025-09-29 09:18:00,245 - INFO - Send task completed
+2025-09-29 09:18:00,245 - INFO - Send task completed
+2025-09-29 09:18:00,245 - INFO - Job "Send Task (trigger: cron[hour='9', minute='18'], next run at: 2025-09-30 09:18:00 HKT)" executed successfully
+2025-09-29 09:33:23,553 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-09-29 09:33:23,553 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-09-29 09:33:23,553 - INFO - Minimal Scheduler started - Work: 9:34, Send: 9:38
+2025-09-29 09:33:23,553 - INFO - Added job "Work Task" to job store "default"
+2025-09-29 09:33:23,553 - INFO - Added job "Send Task" to job store "default"
+2025-09-29 09:33:23,553 - INFO - Scheduler started
+2025-09-29 09:34:00,000 - INFO - Running job "Work Task (trigger: cron[hour='9', minute='34'], next run at: 2025-09-29 09:34:00 HKT)" (scheduled at 2025-09-29 09:34:00+08:00)
+2025-09-29 09:34:00,000 - INFO - Work task started
+2025-09-29 09:34:01,331 - INFO - NumExpr defaulting to 12 threads.
+2025-09-29 09:34:02,232 - INFO - We will use 90% of the memory on device 0 for storing the model, and 10% for the buffer to avoid OOM. You can set `max_memory` in to a higher value to use more memory (at your own risk).
+2025-09-29 09:34:34,703 - INFO - Work task completed
+2025-09-29 09:34:34,704 - INFO - Job "Work Task (trigger: cron[hour='9', minute='34'], next run at: 2025-09-30 09:34:00 HKT)" executed successfully
+2025-09-29 09:38:00,000 - INFO - Running job "Send Task (trigger: cron[hour='9', minute='38'], next run at: 2025-09-30 09:38:00 HKT)" (scheduled at 2025-09-29 09:38:00+08:00)
+2025-09-29 09:38:00,000 - INFO - Send task started
+2025-09-29 09:38:00,000 - INFO - Send task started
+2025-09-29 09:38:00,001 - WARNING - Invalid time format: 07:01:10:00-09:31:16:00
+2025-09-29 09:38:00,263 - INFO - Send task completed
+2025-09-29 09:38:00,263 - INFO - Send task completed
+2025-09-29 09:38:00,263 - INFO - Job "Send Task (trigger: cron[hour='9', minute='38'], next run at: 2025-09-30 09:38:00 HKT)" executed successfully
+2025-09-29 09:38:45,536 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-09-29 09:38:45,536 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-09-29 09:38:45,536 - INFO - Minimal Scheduler started - Work: 2:00, Send: 8:50
+2025-09-29 09:38:45,536 - INFO - Added job "Work Task" to job store "default"
+2025-09-29 09:38:45,536 - INFO - Added job "Send Task" to job store "default"
+2025-09-29 09:38:45,536 - INFO - Scheduler started
+2025-09-30 02:00:00,000 - INFO - Running job "Work Task (trigger: cron[hour='2', minute='0'], next run at: 2025-09-30 02:00:00 HKT)" (scheduled at 2025-09-30 02:00:00+08:00)
+2025-09-30 02:00:00,000 - INFO - Work task started
+2025-09-30 02:00:00,046 - INFO - Work task completed
+2025-09-30 02:00:00,046 - INFO - Job "Work Task (trigger: cron[hour='2', minute='0'], next run at: 2025-10-01 02:00:00 HKT)" executed successfully
+2025-09-30 08:50:00,000 - INFO - Running job "Send Task (trigger: cron[hour='8', minute='50'], next run at: 2025-10-01 08:50:00 HKT)" (scheduled at 2025-09-30 08:50:00+08:00)
+2025-09-30 08:50:00,000 - INFO - Send task started
+2025-09-30 08:50:00,000 - INFO - Send task started
+2025-09-30 08:50:00,001 - WARNING - Invalid time format: 07:01:10:00-09:31:16:00
+2025-09-30 08:50:00,001 - ERROR - Send task failed
+2025-09-30 08:50:00,001 - INFO - Send task completed
+2025-09-30 08:50:00,001 - INFO - Job "Send Task (trigger: cron[hour='8', minute='50'], next run at: 2025-10-01 08:50:00 HKT)" executed successfully
+2025-09-30 10:32:11,127 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-09-30 10:32:11,128 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-09-30 10:32:11,128 - INFO - Minimal Scheduler started - Work: 10:33, Send: 10:35
+2025-09-30 10:32:11,128 - INFO - Added job "Work Task" to job store "default"
+2025-09-30 10:32:11,128 - INFO - Added job "Send Task" to job store "default"
+2025-09-30 10:32:11,128 - INFO - Scheduler started
+2025-09-30 10:32:16,066 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-09-30 10:32:16,066 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-09-30 10:32:16,066 - INFO - Minimal Scheduler started - Work: 10:33, Send: 10:35
+2025-09-30 10:32:16,066 - INFO - Added job "Work Task" to job store "default"
+2025-09-30 10:32:16,066 - INFO - Added job "Send Task" to job store "default"
+2025-09-30 10:32:16,066 - INFO - Scheduler started
+2025-09-30 10:33:00,000 - INFO - Running job "Work Task (trigger: cron[hour='10', minute='33'], next run at: 2025-09-30 10:33:00 HKT)" (scheduled at 2025-09-30 10:33:00+08:00)
+2025-09-30 10:33:00,000 - INFO - Work task started
+2025-09-30 10:33:00,049 - INFO - Work task completed
+2025-09-30 10:33:00,049 - INFO - Job "Work Task (trigger: cron[hour='10', minute='33'], next run at: 2025-10-01 10:33:00 HKT)" executed successfully
+2025-09-30 10:34:32,038 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-09-30 10:34:32,038 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-09-30 10:34:32,038 - INFO - Minimal Scheduler started - Work: 10:35, Send: 10:37
+2025-09-30 10:34:32,038 - INFO - Added job "Work Task" to job store "default"
+2025-09-30 10:34:32,038 - INFO - Added job "Send Task" to job store "default"
+2025-09-30 10:34:32,038 - INFO - Scheduler started
+2025-09-30 10:35:00,000 - INFO - Running job "Work Task (trigger: cron[hour='10', minute='35'], next run at: 2025-09-30 10:35:00 HKT)" (scheduled at 2025-09-30 10:35:00+08:00)
+2025-09-30 10:35:00,000 - INFO - Work task started
+2025-09-30 10:35:01,327 - INFO - NumExpr defaulting to 12 threads.
+2025-09-30 10:35:02,232 - INFO - We will use 90% of the memory on device 0 for storing the model, and 10% for the buffer to avoid OOM. You can set `max_memory` in to a higher value to use more memory (at your own risk).
+2025-09-30 10:35:38,003 - INFO - Work task completed
+2025-09-30 10:35:38,004 - INFO - Job "Work Task (trigger: cron[hour='10', minute='35'], next run at: 2025-10-01 10:35:00 HKT)" executed successfully
+2025-09-30 10:37:00,000 - INFO - Running job "Send Task (trigger: cron[hour='10', minute='37'], next run at: 2025-10-01 10:37:00 HKT)" (scheduled at 2025-09-30 10:37:00+08:00)
+2025-09-30 10:37:00,000 - INFO - Send task started
+2025-09-30 10:37:00,000 - INFO - Send task started
+2025-09-30 10:37:00,001 - WARNING - Invalid time format: 07:01:10:00-09:31:16:00
+2025-09-30 10:37:00,296 - INFO - Send task completed
+2025-09-30 10:37:00,297 - INFO - Send task completed
+2025-09-30 10:37:00,297 - INFO - Job "Send Task (trigger: cron[hour='10', minute='37'], next run at: 2025-10-01 10:37:00 HKT)" executed successfully
+2025-10-01 10:35:00,000 - INFO - Running job "Work Task (trigger: cron[hour='10', minute='35'], next run at: 2025-10-02 10:35:00 HKT)" (scheduled at 2025-10-01 10:35:00+08:00)
+2025-10-01 10:35:00,000 - INFO - Work task started
+2025-10-01 10:35:00,114 - INFO - Work task completed
+2025-10-01 10:35:00,114 - INFO - Job "Work Task (trigger: cron[hour='10', minute='35'], next run at: 2025-10-02 10:35:00 HKT)" executed successfully
+2025-10-01 10:37:00,000 - INFO - Running job "Send Task (trigger: cron[hour='10', minute='37'], next run at: 2025-10-02 10:37:00 HKT)" (scheduled at 2025-10-01 10:37:00+08:00)
+2025-10-01 10:37:00,000 - INFO - Send task started
+2025-10-01 10:37:00,000 - INFO - Send task started
+2025-10-01 10:37:00,001 - WARNING - Invalid time format: 07:01:10:00-09:31:16:00
+2025-10-01 10:37:00,260 - INFO - Send task completed
+2025-10-01 10:37:00,260 - INFO - Send task completed
+2025-10-01 10:37:00,260 - INFO - Job "Send Task (trigger: cron[hour='10', minute='37'], next run at: 2025-10-02 10:37:00 HKT)" executed successfully
+2025-10-02 10:35:00,000 - INFO - Running job "Work Task (trigger: cron[hour='10', minute='35'], next run at: 2025-10-03 10:35:00 HKT)" (scheduled at 2025-10-02 10:35:00+08:00)
+2025-10-02 10:35:00,000 - INFO - Work task started
+2025-10-02 10:35:00,304 - INFO - We will use 90% of the memory on device 0 for storing the model, and 10% for the buffer to avoid OOM. You can set `max_memory` in to a higher value to use more memory (at your own risk).
+2025-10-02 10:35:37,058 - INFO - Work task completed
+2025-10-02 10:35:37,059 - INFO - Job "Work Task (trigger: cron[hour='10', minute='35'], next run at: 2025-10-03 10:35:00 HKT)" executed successfully
+2025-10-02 10:37:00,000 - INFO - Running job "Send Task (trigger: cron[hour='10', minute='37'], next run at: 2025-10-03 10:37:00 HKT)" (scheduled at 2025-10-02 10:37:00+08:00)
+2025-10-02 10:37:00,000 - INFO - Send task started
+2025-10-02 10:37:00,000 - INFO - Send task started
+2025-10-02 10:37:00,001 - WARNING - Invalid time format: 07:01:10:00-09:31:16:00
+2025-10-02 10:37:00,294 - INFO - Send task completed
+2025-10-02 10:37:00,294 - INFO - Send task completed
+2025-10-02 10:37:00,294 - INFO - Job "Send Task (trigger: cron[hour='10', minute='37'], next run at: 2025-10-03 10:37:00 HKT)" executed successfully
+2025-10-02 20:23:11,489 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-10-02 20:23:11,490 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-10-02 20:23:11,490 - INFO - Minimal Scheduler started - Work: 2:00, Send: 8:50
+2025-10-02 20:23:11,490 - INFO - Added job "Work Task" to job store "default"
+2025-10-02 20:23:11,490 - INFO - Added job "Send Task" to job store "default"
+2025-10-02 20:23:11,490 - INFO - Scheduler started
+2025-10-02 20:23:13,986 - INFO - Scheduler stopped
