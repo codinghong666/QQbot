@@ -1,0 +1,6 @@
+QQ Group Message Time Information Extraction Results
+Number of groups processed: 1
+============================================================
+
+Group: Group 1062848088
+----------------------------------------

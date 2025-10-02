@@ -65,6 +65,6 @@ def iter_data():
     return result
 
 if __name__ == "__main__":
-    remove_data('1062848088', '1616498165')
+    remove_data('1062848088', '889743639')
     for i in iter_data():
         print(i)

@@ -234,3 +234,67 @@
 2025-10-02 20:23:11,490 - INFO - Added job "Send Task" to job store "default"
 2025-10-02 20:23:11,490 - INFO - Scheduler started
 2025-10-02 20:23:13,986 - INFO - Scheduler stopped
+2025-10-02 20:44:47,473 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-10-02 20:44:47,473 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-10-02 20:44:47,473 - INFO - Minimal Scheduler started - Work: 20:45, Send: 20:46
+2025-10-02 20:44:47,473 - INFO - Added job "Work Task" to job store "default"
+2025-10-02 20:44:47,473 - INFO - Added job "Send Task" to job store "default"
+2025-10-02 20:44:47,473 - INFO - Scheduler started
+2025-10-02 20:45:00,000 - INFO - Running job "Work Task (trigger: cron[hour='20', minute='45'], next run at: 2025-10-02 20:45:00 HKT)" (scheduled at 2025-10-02 20:45:00+08:00)
+2025-10-02 20:45:00,000 - INFO - Work task started
+2025-10-02 20:45:16,793 - INFO - Work task completed
+2025-10-02 20:45:16,793 - INFO - Job "Work Task (trigger: cron[hour='20', minute='45'], next run at: 2025-10-03 20:45:00 HKT)" executed successfully
+2025-10-02 20:46:00,000 - INFO - Running job "Send Task (trigger: cron[hour='20', minute='46'], next run at: 2025-10-03 20:46:00 HKT)" (scheduled at 2025-10-02 20:46:00+08:00)
+2025-10-02 20:46:00,000 - INFO - Send task started
+2025-10-02 20:46:00,000 - INFO - Send task started
+2025-10-02 20:46:00,001 - WARNING - Invalid time format: 07:01:10:00-09:31:16:00
+2025-10-02 20:46:00,264 - INFO - Send task completed
+2025-10-02 20:46:00,264 - INFO - Send task completed
+2025-10-02 20:46:00,264 - INFO - Job "Send Task (trigger: cron[hour='20', minute='46'], next run at: 2025-10-03 20:46:00 HKT)" executed successfully
+2025-10-02 20:49:47,401 - INFO - Scheduler stopped
+2025-10-02 20:50:38,498 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-10-02 20:50:38,498 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-10-02 20:50:38,498 - INFO - Minimal Scheduler started - Work: 20:51, Send: 20:52
+2025-10-02 20:50:38,498 - INFO - Added job "Work Task" to job store "default"
+2025-10-02 20:50:38,498 - INFO - Added job "Send Task" to job store "default"
+2025-10-02 20:50:38,498 - INFO - Scheduler started
+2025-10-02 20:51:00,000 - INFO - Running job "Work Task (trigger: cron[hour='20', minute='51'], next run at: 2025-10-02 20:51:00 HKT)" (scheduled at 2025-10-02 20:51:00+08:00)
+2025-10-02 20:51:00,000 - INFO - Work task started
+2025-10-02 20:51:29,813 - INFO - Work task completed
+2025-10-02 20:51:29,813 - INFO - Job "Work Task (trigger: cron[hour='20', minute='51'], next run at: 2025-10-03 20:51:00 HKT)" executed successfully
+2025-10-02 20:52:00,000 - INFO - Running job "Send Task (trigger: cron[hour='20', minute='52'], next run at: 2025-10-03 20:52:00 HKT)" (scheduled at 2025-10-02 20:52:00+08:00)
+2025-10-02 20:52:00,000 - INFO - Send task started
+2025-10-02 20:52:00,000 - INFO - Send task started
+2025-10-02 20:52:00,001 - WARNING - Invalid time format: 07:01:10:00-09:31:16:00
+2025-10-02 20:52:00,259 - INFO - Send task completed
+2025-10-02 20:52:00,259 - INFO - Send task completed
+2025-10-02 20:52:00,259 - INFO - Job "Send Task (trigger: cron[hour='20', minute='52'], next run at: 2025-10-03 20:52:00 HKT)" executed successfully
+2025-10-02 21:11:04,399 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-10-02 21:11:04,399 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-10-02 21:11:04,399 - INFO - Minimal Scheduler started - Work: 21:11, Send: 21:12
+2025-10-02 21:11:04,399 - INFO - Added job "Work Task" to job store "default"
+2025-10-02 21:11:04,399 - INFO - Added job "Send Task" to job store "default"
+2025-10-02 21:11:04,399 - INFO - Scheduler started
+2025-10-02 21:11:32,134 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-10-02 21:11:32,134 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-10-02 21:11:32,134 - INFO - Minimal Scheduler started - Work: 21:12, Send: 21:13
+2025-10-02 21:11:32,135 - INFO - Added job "Work Task" to job store "default"
+2025-10-02 21:11:32,135 - INFO - Added job "Send Task" to job store "default"
+2025-10-02 21:11:32,135 - INFO - Scheduler started
+2025-10-02 21:12:00,000 - INFO - Running job "Work Task (trigger: cron[hour='21', minute='12'], next run at: 2025-10-02 21:12:00 HKT)" (scheduled at 2025-10-02 21:12:00+08:00)
+2025-10-02 21:12:00,000 - INFO - Work task started
+2025-10-02 21:12:30,089 - INFO - Work task completed
+2025-10-02 21:12:30,089 - INFO - Job "Work Task (trigger: cron[hour='21', minute='12'], next run at: 2025-10-03 21:12:00 HKT)" executed successfully
+2025-10-02 21:13:00,000 - INFO - Running job "Send Task (trigger: cron[hour='21', minute='13'], next run at: 2025-10-03 21:13:00 HKT)" (scheduled at 2025-10-02 21:13:00+08:00)
+2025-10-02 21:13:00,000 - INFO - Send task started
+2025-10-02 21:13:00,000 - INFO - Send task started
+2025-10-02 21:13:00,001 - WARNING - Invalid time format: 07:01:10:00-09:31:16:00
+2025-10-02 21:13:00,289 - INFO - Send task completed
+2025-10-02 21:13:00,289 - INFO - Send task completed
+2025-10-02 21:13:00,289 - INFO - Job "Send Task (trigger: cron[hour='21', minute='13'], next run at: 2025-10-03 21:13:00 HKT)" executed successfully
+2025-10-02 21:20:22,058 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-10-02 21:20:22,059 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-10-02 21:20:22,059 - INFO - Minimal Scheduler started - Work: 2:00, Send: 8:50
+2025-10-02 21:20:22,059 - INFO - Added job "Work Task" to job store "default"
+2025-10-02 21:20:22,059 - INFO - Added job "Send Task" to job store "default"
+2025-10-02 21:20:22,059 - INFO - Scheduler started

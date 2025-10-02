@@ -153,7 +153,11 @@ def extract_time_info_by_api(message_text):
         
         print(f"Final content: {content}")
         
+        if "<think>" in content:
+            content = content.split("<think>")[1].split("</think>")[1]
         # 检查是否包含时间信息
+        content = content.strip()
+        print(f"Final content: {content}")
         if not content or content.lower() in ['无', '没有', 'none', 'no', '无时间信息', '未检测到时间信息', 'no time information detected']:
             return None
         
@@ -162,8 +166,6 @@ def extract_time_info_by_api(message_text):
         # time_pattern = r'\d{2}:\d{2}:\d{2}:\d{2}'
         # if not re.search(time_pattern, content):
         #     return None
-        if "<think>" in content:
-            content = content.split("<think>")[1].split("</think>")[1]
         return content.strip()
         
     except Exception as e:
