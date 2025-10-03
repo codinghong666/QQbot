@@ -13,7 +13,9 @@ from send import check_all
 from loadconfig import load_config
 from datebase import iter_data
 import logging
-
+import subprocess
+import time
+import requests
 
 # Configure logging
 logging.basicConfig(
@@ -25,8 +27,47 @@ logging.basicConfig(
     ]
 )
 
+def wait_for_api_ready(base_url="http://localhost:3001", max_wait=30):
+    """
+    Wait for napcat API to be ready
+    
+    Args:
+        base_url: API base URL
+        max_wait: Maximum wait time in seconds
+        
+    Returns:
+        bool: True if API is ready, False if timeout
+    """
+    logging.info("Waiting for napcat API to be ready...")
+    start_time = time.time()
+    
+    while time.time() - start_time < max_wait:
+        try:
+            # Try to connect to the API
+            response = requests.get(f"{base_url}/get_group_msg_history", timeout=2)
+            if response.status_code == 200:
+                logging.info("Napcat API is ready!")
+                return True
+        except:
+            pass
+        
+        time.sleep(1)
+    
+    logging.warning(f"API not ready after {max_wait} seconds, proceeding anyway...")
+    return False
+
 def run_work_task():
     """Execute work task"""
+    try:
+        working_qq = load_config().get('working_qq')
+        subprocess.run(['sudo','napcat','stop'])
+        time.sleep(5)
+        subprocess.run(['sudo','napcat','start',working_qq])
+        time.sleep(5)
+        # Wait for napcat API to be ready
+        # wait_for_api_ready(load_config().get('api', {}).get('base_url'))
+    except Exception as e:
+        logging.error(f"Napcat stop and start failed: {e}")
     try:
         logging.info("Work task started")
         work()
@@ -36,6 +77,16 @@ def run_work_task():
 
 def run_send_task():
     """Execute send task"""
+    try:
+        working_qq = load_config().get('working_qq')
+        subprocess.run(['sudo','napcat','stop'])
+        time.sleep(5)
+        subprocess.run(['sudo','napcat','start',working_qq])
+        time.sleep(5)
+        # Wait for napcat API to be ready
+        # wait_for_api_ready(load_config().get('api', {}).get('base_url'))
+    except Exception as e:
+        logging.error(f"Napcat stop and start failed: {e}")
     try:
         logging.info("Send task started")
         check_all()

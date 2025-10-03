@@ -26,7 +26,7 @@ def get_group_messages(group_id, count, config):
         config: Configuration dictionary
     """
     api_config = config.get('api', {})
-    base_url = api_config.get('base_url', 'http://localhost:3000')
+    base_url = api_config.get('base_url', 'http://localhost:3001')
     token = api_config.get('token', '1145141919810')
     timeout = api_config.get('timeout', 10)
     
@@ -48,8 +48,17 @@ def get_group_messages(group_id, count, config):
         response = requests.post(url, headers=headers, json=payload, timeout=timeout)
         response.raise_for_status()
         return response.json()
+    except requests.exceptions.ConnectionError as e:
+        print(f"连接错误 - 无法连接到 {base_url}: {e}")
+        return None
+    except requests.exceptions.Timeout as e:
+        print(f"请求超时 - {base_url}: {e}")
+        return None
+    except requests.exceptions.HTTPError as e:
+        print(f"HTTP错误 - {base_url}: {e}")
+        return None
     except Exception as e:
-        print(f"Request failed for group {group_id}: {e}")
+        print(f"API请求失败 - {base_url}: {e}")
         return None
 
 
@@ -147,3 +156,5 @@ def get_and_parse_messages(config_file="config.env"):
     
     return results
 
+if __name__ == "__main__":
+   print(get_and_parse_messages())

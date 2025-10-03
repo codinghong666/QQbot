@@ -63,8 +63,16 @@ def iter_data():
     result = cursor.fetchall()
     conn.close()
     return result
-
+def remove_all_data():
+    conn = sqlite3.connect('qq.db')
+    cursor = conn.cursor()
+    cursor.execute('''
+        DELETE FROM qq
+    ''')
+    conn.commit()
+    conn.close()
 if __name__ == "__main__":
-    remove_data('1062848088', '889743639')
+    remove_all_data()
+    # remove_data('1062848088', '889743639')
     for i in iter_data():
         print(i)

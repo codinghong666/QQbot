@@ -19,6 +19,7 @@ def load_config(config_file="config.env"):
     message_count = int(os.getenv('MESSAGE_COUNT', '20'))
     work_time = os.getenv('WORK_TIME', '02:00')
     send_time = os.getenv('SEND_TIME', '08:50')
+    base_url = os.getenv('BASE_URL', 'http://localhost:3001')
     
     # Validate required fields
     if not token:
@@ -40,9 +41,10 @@ def load_config(config_file="config.env"):
         })
     send_id = os.getenv('SEND_ID')
     model = os.getenv('MODEL')
+    working_qq = os.getenv('WORKING_QQ')
     config = {
         "api": {
-            "base_url": "http://localhost:3000",
+            "base_url": base_url,
             "token": token,
             "timeout": 10
         },
@@ -50,7 +52,8 @@ def load_config(config_file="config.env"):
         "send_id": send_id,
         "work_time": work_time,
         "send_time": send_time,
-        "model": model
+        "model": model,
+        "working_qq": working_qq
     }
     
     return config

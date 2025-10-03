@@ -126,6 +126,7 @@ def check_all():
         
         # Send message
         result = send(message_content, config)
+        print(result)
         if result:
             logging.info("Send task completed")
         else:

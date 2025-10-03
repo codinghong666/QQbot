@@ -298,3 +298,387 @@
 2025-10-02 21:20:22,059 - INFO - Added job "Work Task" to job store "default"
 2025-10-02 21:20:22,059 - INFO - Added job "Send Task" to job store "default"
 2025-10-02 21:20:22,059 - INFO - Scheduler started
+2025-10-03 02:00:00,000 - INFO - Running job "Work Task (trigger: cron[hour='2', minute='0'], next run at: 2025-10-03 02:00:00 HKT)" (scheduled at 2025-10-03 02:00:00+08:00)
+2025-10-03 02:00:00,000 - INFO - Work task started
+2025-10-03 02:00:09,874 - INFO - Work task completed
+2025-10-03 02:00:09,874 - INFO - Job "Work Task (trigger: cron[hour='2', minute='0'], next run at: 2025-10-04 02:00:00 HKT)" executed successfully
+2025-10-03 08:50:00,000 - INFO - Running job "Send Task (trigger: cron[hour='8', minute='50'], next run at: 2025-10-04 08:50:00 HKT)" (scheduled at 2025-10-03 08:50:00+08:00)
+2025-10-03 08:50:00,000 - INFO - Send task started
+2025-10-03 08:50:00,000 - INFO - Send task started
+2025-10-03 08:50:00,001 - WARNING - Invalid time format: 07:01:10:00-09:31:16:00
+2025-10-03 08:50:00,255 - INFO - Send task completed
+2025-10-03 08:50:00,255 - INFO - Send task completed
+2025-10-03 08:50:00,255 - INFO - Job "Send Task (trigger: cron[hour='8', minute='50'], next run at: 2025-10-04 08:50:00 HKT)" executed successfully
+2025-10-03 09:07:21,844 - INFO - Send task started
+2025-10-03 09:07:21,844 - WARNING - Invalid time format: 07:01:10:00-09:31:16:00
+2025-10-03 09:07:22,074 - INFO - Send task completed
+2025-10-03 09:15:23,097 - INFO - Send task started
+2025-10-03 09:15:23,351 - INFO - Send task completed
+2025-10-03 09:17:40,412 - INFO - Send task started
+2025-10-03 09:17:40,672 - INFO - Send task completed
+2025-10-03 09:18:49,560 - INFO - Send task started
+2025-10-03 09:18:49,804 - INFO - Send task completed
+2025-10-03 09:19:26,115 - INFO - Send task started
+2025-10-03 09:19:26,351 - INFO - Send task completed
+2025-10-03 09:30:49,033 - INFO - Send task started
+2025-10-03 09:30:49,306 - INFO - Send task completed
+2025-10-03 09:31:19,106 - INFO - Send task started
+2025-10-03 09:31:19,370 - INFO - Send task completed
+2025-10-03 09:32:50,123 - INFO - Send task started
+2025-10-03 09:32:50,370 - INFO - Send task completed
+2025-10-03 09:35:31,373 - INFO - Send task started
+2025-10-03 09:35:31,635 - INFO - Send task completed
+2025-10-03 09:37:35,749 - INFO - Send task started
+2025-10-03 09:37:36,010 - INFO - Send task completed
+2025-10-03 09:37:51,835 - INFO - Send task started
+2025-10-03 09:37:52,090 - INFO - Send task completed
+2025-10-03 09:38:46,248 - INFO - Send task started
+2025-10-03 09:38:56,252 - INFO - Send task completed
+2025-10-03 09:39:53,085 - INFO - Send task started
+2025-10-03 09:40:03,089 - INFO - Send task completed
+2025-10-03 09:40:12,807 - INFO - Send task started
+2025-10-03 09:40:22,812 - INFO - Send task completed
+2025-10-03 09:48:26,419 - INFO - Send task started
+2025-10-03 09:48:36,424 - INFO - Send task completed
+2025-10-03 09:49:09,511 - INFO - Send task started
+2025-10-03 09:49:19,516 - INFO - Send task completed
+2025-10-03 09:50:07,409 - INFO - Send task started
+2025-10-03 09:50:07,660 - INFO - Send task completed
+2025-10-03 09:50:39,859 - INFO - Send task started
+2025-10-03 09:51:25,584 - INFO - Send task started
+2025-10-03 09:51:25,820 - INFO - Send task completed
+2025-10-03 09:57:05,731 - INFO - Send task started
+2025-10-03 10:24:43,022 - INFO - Send task started
+2025-10-03 10:24:53,027 - INFO - Send task completed
+2025-10-03 11:03:41,482 - INFO - Send task started
+2025-10-03 11:03:51,487 - INFO - Send task completed
+2025-10-03 17:11:19,611 - INFO - Send task started
+2025-10-03 17:11:19,877 - INFO - Send task completed
+2025-10-03 17:12:05,846 - INFO - Send task started
+2025-10-03 17:12:06,113 - INFO - Send task completed
+2025-10-03 17:26:21,664 - INFO - Send task started
+2025-10-03 17:26:56,326 - INFO - Send task started
+2025-10-03 17:26:56,904 - INFO - Send task completed
+2025-10-03 17:38:19,939 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-10-03 17:38:19,939 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-10-03 17:38:19,939 - INFO - Minimal Scheduler started - Work: 17:39, Send: 17:50
+2025-10-03 17:38:19,939 - INFO - Added job "Work Task" to job store "default"
+2025-10-03 17:38:19,939 - INFO - Added job "Send Task" to job store "default"
+2025-10-03 17:38:19,939 - INFO - Scheduler started
+2025-10-03 17:38:29,721 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-10-03 17:38:29,721 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-10-03 17:38:29,721 - INFO - Minimal Scheduler started - Work: 17:39, Send: 17:50
+2025-10-03 17:38:29,722 - INFO - Added job "Work Task" to job store "default"
+2025-10-03 17:38:29,722 - INFO - Added job "Send Task" to job store "default"
+2025-10-03 17:38:29,722 - INFO - Scheduler started
+2025-10-03 17:39:00,000 - INFO - Running job "Work Task (trigger: cron[hour='17', minute='39'], next run at: 2025-10-03 17:39:00 HKT)" (scheduled at 2025-10-03 17:39:00+08:00)
+2025-10-03 17:39:00,002 - ERROR - Napcat stop and start failed: expected str, bytes or os.PathLike object, not NoneType
+2025-10-03 17:39:00,002 - INFO - Work task started
+2025-10-03 17:39:00,054 - INFO - Work task completed
+2025-10-03 17:39:00,054 - INFO - Job "Work Task (trigger: cron[hour='17', minute='39'], next run at: 2025-10-04 17:39:00 HKT)" executed successfully
+2025-10-03 17:41:03,939 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-10-03 17:41:03,940 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-10-03 17:41:03,940 - INFO - Minimal Scheduler started - Work: 17:41, Send: 17:50
+2025-10-03 17:41:03,940 - INFO - Added job "Work Task" to job store "default"
+2025-10-03 17:41:03,940 - INFO - Added job "Send Task" to job store "default"
+2025-10-03 17:41:03,940 - INFO - Scheduler started
+2025-10-03 17:41:16,745 - INFO - Scheduler stopped
+2025-10-03 17:41:20,500 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-10-03 17:41:20,500 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-10-03 17:41:20,500 - INFO - Minimal Scheduler started - Work: 17:42, Send: 17:50
+2025-10-03 17:41:20,500 - INFO - Added job "Work Task" to job store "default"
+2025-10-03 17:41:20,500 - INFO - Added job "Send Task" to job store "default"
+2025-10-03 17:41:20,500 - INFO - Scheduler started
+2025-10-03 17:42:00,000 - INFO - Running job "Work Task (trigger: cron[hour='17', minute='42'], next run at: 2025-10-03 17:42:00 HKT)" (scheduled at 2025-10-03 17:42:00+08:00)
+2025-10-03 17:42:00,010 - ERROR - Napcat stop and start failed: expected str, bytes or os.PathLike object, not NoneType
+2025-10-03 17:42:00,011 - INFO - Work task started
+2025-10-03 17:42:00,063 - INFO - Work task completed
+2025-10-03 17:42:00,063 - INFO - Job "Work Task (trigger: cron[hour='17', minute='42'], next run at: 2025-10-04 17:42:00 HKT)" executed successfully
+2025-10-03 17:42:34,175 - INFO - Scheduler stopped
+2025-10-03 17:44:54,066 - INFO - Send task started
+2025-10-03 17:44:54,066 - INFO - datebase is empty
+2025-10-03 17:44:54,328 - INFO - Send task completed
+2025-10-03 17:45:30,046 - INFO - Send task started
+2025-10-03 17:45:30,046 - INFO - datebase is empty
+2025-10-03 17:45:30,294 - INFO - Send task completed
+2025-10-03 17:46:12,521 - INFO - Send task started
+2025-10-03 17:46:12,522 - INFO - datebase is empty
+2025-10-03 17:46:12,766 - INFO - Send task completed
+2025-10-03 17:46:31,581 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-10-03 17:46:31,581 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-10-03 17:46:31,581 - INFO - Minimal Scheduler started - Work: 17:46, Send: 18:00
+2025-10-03 17:46:31,582 - INFO - Added job "Work Task" to job store "default"
+2025-10-03 17:46:31,582 - INFO - Added job "Send Task" to job store "default"
+2025-10-03 17:46:31,582 - INFO - Scheduler started
+2025-10-03 17:46:35,934 - INFO - Scheduler stopped
+2025-10-03 17:46:42,369 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-10-03 17:46:42,369 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-10-03 17:46:42,369 - INFO - Minimal Scheduler started - Work: 17:47, Send: 18:00
+2025-10-03 17:46:42,369 - INFO - Added job "Work Task" to job store "default"
+2025-10-03 17:46:42,369 - INFO - Added job "Send Task" to job store "default"
+2025-10-03 17:46:42,369 - INFO - Scheduler started
+2025-10-03 17:47:00,000 - INFO - Running job "Work Task (trigger: cron[hour='17', minute='47'], next run at: 2025-10-03 17:47:00 HKT)" (scheduled at 2025-10-03 17:47:00+08:00)
+2025-10-03 17:47:02,059 - ERROR - Napcat stop and start failed: expected str, bytes or os.PathLike object, not NoneType
+2025-10-03 17:47:02,059 - INFO - Work task started
+2025-10-03 17:47:02,109 - INFO - Work task completed
+2025-10-03 17:47:02,109 - INFO - Job "Work Task (trigger: cron[hour='17', minute='47'], next run at: 2025-10-04 17:47:00 HKT)" executed successfully
+2025-10-03 17:47:07,319 - INFO - Scheduler stopped
+2025-10-03 17:50:00,000 - INFO - Running job "Send Task (trigger: cron[hour='17', minute='50'], next run at: 2025-10-04 17:50:00 HKT)" (scheduled at 2025-10-03 17:50:00+08:00)
+2025-10-03 17:50:00,002 - ERROR - Napcat stop and start failed: expected str, bytes or os.PathLike object, not NoneType
+2025-10-03 17:50:00,002 - INFO - Send task started
+2025-10-03 17:50:00,003 - INFO - Send task started
+2025-10-03 17:50:00,003 - INFO - datebase is empty
+2025-10-03 17:50:00,003 - ERROR - Send task failed
+2025-10-03 17:50:00,003 - INFO - Send task completed
+2025-10-03 17:50:00,004 - INFO - Job "Send Task (trigger: cron[hour='17', minute='50'], next run at: 2025-10-04 17:50:00 HKT)" executed successfully
+2025-10-03 17:52:28,849 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-10-03 17:52:28,849 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-10-03 17:52:28,849 - INFO - Minimal Scheduler started - Work: 17:53, Send: 18:05
+2025-10-03 17:52:28,849 - INFO - Added job "Work Task" to job store "default"
+2025-10-03 17:52:28,850 - INFO - Added job "Send Task" to job store "default"
+2025-10-03 17:52:28,850 - INFO - Scheduler started
+2025-10-03 17:53:00,000 - INFO - Running job "Work Task (trigger: cron[hour='17', minute='53'], next run at: 2025-10-03 17:53:00 HKT)" (scheduled at 2025-10-03 17:53:00+08:00)
+2025-10-03 17:53:00,011 - ERROR - Napcat stop and start failed: expected str, bytes or os.PathLike object, not NoneType
+2025-10-03 17:53:00,011 - INFO - Work task started
+2025-10-03 17:53:00,064 - INFO - Work task completed
+2025-10-03 17:53:00,064 - INFO - Job "Work Task (trigger: cron[hour='17', minute='53'], next run at: 2025-10-04 17:53:00 HKT)" executed successfully
+2025-10-03 17:53:12,417 - INFO - Scheduler stopped
+2025-10-03 17:53:24,309 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-10-03 17:53:24,310 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-10-03 17:53:24,310 - INFO - Minimal Scheduler started - Work: 17:54, Send: 18:05
+2025-10-03 17:53:24,310 - INFO - Added job "Work Task" to job store "default"
+2025-10-03 17:53:24,310 - INFO - Added job "Send Task" to job store "default"
+2025-10-03 17:53:24,310 - INFO - Scheduler started
+2025-10-03 17:54:00,000 - INFO - Running job "Work Task (trigger: cron[hour='17', minute='54'], next run at: 2025-10-03 17:54:00 HKT)" (scheduled at 2025-10-03 17:54:00+08:00)
+2025-10-03 17:54:00,011 - ERROR - Napcat stop and start failed: expected str, bytes or os.PathLike object, not NoneType
+2025-10-03 17:54:00,011 - INFO - Work task started
+2025-10-03 17:54:00,065 - INFO - Work task completed
+2025-10-03 17:54:00,065 - INFO - Job "Work Task (trigger: cron[hour='17', minute='54'], next run at: 2025-10-04 17:54:00 HKT)" executed successfully
+2025-10-03 17:54:21,826 - INFO - Scheduler stopped
+2025-10-03 17:56:44,283 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-10-03 17:56:44,283 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-10-03 17:56:44,283 - INFO - Minimal Scheduler started - Work: 17:57, Send: 18:05
+2025-10-03 17:56:44,284 - INFO - Added job "Work Task" to job store "default"
+2025-10-03 17:56:44,284 - INFO - Added job "Send Task" to job store "default"
+2025-10-03 17:56:44,284 - INFO - Scheduler started
+2025-10-03 17:57:00,000 - INFO - Running job "Work Task (trigger: cron[hour='17', minute='57'], next run at: 2025-10-03 17:57:00 HKT)" (scheduled at 2025-10-03 17:57:00+08:00)
+2025-10-03 17:57:00,026 - INFO - Work task started
+2025-10-03 17:57:00,080 - INFO - Work task completed
+2025-10-03 17:57:00,080 - INFO - Job "Work Task (trigger: cron[hour='17', minute='57'], next run at: 2025-10-04 17:57:00 HKT)" executed successfully
+2025-10-03 17:57:09,804 - INFO - Scheduler stopped
+2025-10-03 17:57:44,450 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-10-03 17:57:44,450 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-10-03 17:57:44,450 - INFO - Minimal Scheduler started - Work: 17:58, Send: 18:05
+2025-10-03 17:57:44,450 - INFO - Added job "Work Task" to job store "default"
+2025-10-03 17:57:44,450 - INFO - Added job "Send Task" to job store "default"
+2025-10-03 17:57:44,450 - INFO - Scheduler started
+2025-10-03 17:58:00,000 - INFO - Running job "Work Task (trigger: cron[hour='17', minute='58'], next run at: 2025-10-03 17:58:00 HKT)" (scheduled at 2025-10-03 17:58:00+08:00)
+2025-10-03 17:58:02,073 - INFO - Work task started
+2025-10-03 17:58:02,081 - ERROR - Work task failed: not enough values to unpack (expected 3, got 0)
+2025-10-03 17:58:02,081 - INFO - Job "Work Task (trigger: cron[hour='17', minute='58'], next run at: 2025-10-04 17:58:00 HKT)" executed successfully
+2025-10-03 17:59:38,527 - INFO - Scheduler stopped
+2025-10-03 17:59:51,167 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-10-03 17:59:51,167 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-10-03 17:59:51,167 - INFO - Minimal Scheduler started - Work: 18:00, Send: 18:05
+2025-10-03 17:59:51,167 - INFO - Added job "Work Task" to job store "default"
+2025-10-03 17:59:51,167 - INFO - Added job "Send Task" to job store "default"
+2025-10-03 17:59:51,167 - INFO - Scheduler started
+2025-10-03 18:00:00,000 - INFO - Running job "Work Task (trigger: cron[hour='18', minute='0'], next run at: 2025-10-03 18:00:00 HKT)" (scheduled at 2025-10-03 18:00:00+08:00)
+2025-10-03 18:00:02,076 - INFO - Work task started
+2025-10-03 18:00:02,083 - ERROR - Work task failed: not enough values to unpack (expected 3, got 0)
+2025-10-03 18:00:02,083 - INFO - Job "Work Task (trigger: cron[hour='18', minute='0'], next run at: 2025-10-04 18:00:00 HKT)" executed successfully
+2025-10-03 18:00:50,142 - INFO - Scheduler stopped
+2025-10-03 18:04:06,263 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-10-03 18:04:06,263 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-10-03 18:04:06,263 - INFO - Minimal Scheduler started - Work: 18:04, Send: 18:08
+2025-10-03 18:04:06,263 - INFO - Added job "Work Task" to job store "default"
+2025-10-03 18:04:06,263 - INFO - Added job "Send Task" to job store "default"
+2025-10-03 18:04:06,263 - INFO - Scheduler started
+2025-10-03 18:04:07,090 - INFO - Scheduler stopped
+2025-10-03 18:04:17,149 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-10-03 18:04:17,149 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-10-03 18:04:17,149 - INFO - Minimal Scheduler started - Work: 18:05, Send: 18:10
+2025-10-03 18:04:17,149 - INFO - Added job "Work Task" to job store "default"
+2025-10-03 18:04:17,150 - INFO - Added job "Send Task" to job store "default"
+2025-10-03 18:04:17,150 - INFO - Scheduler started
+2025-10-03 18:05:00,000 - INFO - Running job "Work Task (trigger: cron[hour='18', minute='5'], next run at: 2025-10-03 18:05:00 HKT)" (scheduled at 2025-10-03 18:05:00+08:00)
+2025-10-03 18:05:02,073 - INFO - Work task started
+2025-10-03 18:05:02,128 - INFO - Work task completed
+2025-10-03 18:05:02,128 - INFO - Job "Work Task (trigger: cron[hour='18', minute='5'], next run at: 2025-10-04 18:05:00 HKT)" executed successfully
+2025-10-03 18:05:21,239 - INFO - Scheduler stopped
+2025-10-03 18:10:56,313 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-10-03 18:10:56,314 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-10-03 18:10:56,314 - INFO - Minimal Scheduler started - Work: 18:10, Send: 18:13
+2025-10-03 18:10:56,314 - INFO - Added job "Work Task" to job store "default"
+2025-10-03 18:10:56,314 - INFO - Added job "Send Task" to job store "default"
+2025-10-03 18:10:56,314 - INFO - Scheduler started
+2025-10-03 18:10:57,159 - INFO - Scheduler stopped
+2025-10-03 18:11:01,983 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-10-03 18:11:01,983 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-10-03 18:11:01,984 - INFO - Minimal Scheduler started - Work: 18:11, Send: 18:13
+2025-10-03 18:11:01,984 - INFO - Added job "Work Task" to job store "default"
+2025-10-03 18:11:01,984 - INFO - Added job "Send Task" to job store "default"
+2025-10-03 18:11:01,984 - INFO - Scheduler started
+2025-10-03 18:11:12,839 - INFO - Scheduler stopped
+2025-10-03 18:11:16,938 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-10-03 18:11:16,938 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-10-03 18:11:16,938 - INFO - Minimal Scheduler started - Work: 18:12, Send: 18:14
+2025-10-03 18:11:16,938 - INFO - Added job "Work Task" to job store "default"
+2025-10-03 18:11:16,938 - INFO - Added job "Send Task" to job store "default"
+2025-10-03 18:11:16,938 - INFO - Scheduler started
+2025-10-03 18:12:00,000 - INFO - Running job "Work Task (trigger: cron[hour='18', minute='12'], next run at: 2025-10-03 18:12:00 HKT)" (scheduled at 2025-10-03 18:12:00+08:00)
+2025-10-03 18:12:00,017 - INFO - Work task started
+2025-10-03 18:12:00,072 - INFO - Work task completed
+2025-10-03 18:12:00,072 - INFO - Job "Work Task (trigger: cron[hour='18', minute='12'], next run at: 2025-10-04 18:12:00 HKT)" executed successfully
+2025-10-03 18:12:43,730 - INFO - Scheduler stopped
+2025-10-03 18:15:16,634 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-10-03 18:15:16,634 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-10-03 18:15:16,634 - INFO - Minimal Scheduler started - Work: 18:16, Send: 18:20
+2025-10-03 18:15:16,635 - INFO - Added job "Work Task" to job store "default"
+2025-10-03 18:15:16,635 - INFO - Added job "Send Task" to job store "default"
+2025-10-03 18:15:16,635 - INFO - Scheduler started
+2025-10-03 18:16:00,000 - INFO - Running job "Work Task (trigger: cron[hour='18', minute='16'], next run at: 2025-10-03 18:16:00 HKT)" (scheduled at 2025-10-03 18:16:00+08:00)
+2025-10-03 18:16:00,028 - INFO - Waiting for napcat API to be ready...
+2025-10-03 18:16:30,079 - WARNING - API not ready after 30 seconds, proceeding anyway...
+2025-10-03 18:16:30,079 - INFO - Work task started
+2025-10-03 18:18:21,982 - INFO - Work task completed
+2025-10-03 18:18:21,982 - INFO - Job "Work Task (trigger: cron[hour='18', minute='16'], next run at: 2025-10-04 18:16:00 HKT)" executed successfully
+2025-10-03 18:20:00,000 - INFO - Running job "Send Task (trigger: cron[hour='18', minute='20'], next run at: 2025-10-04 18:20:00 HKT)" (scheduled at 2025-10-03 18:20:00+08:00)
+2025-10-03 18:20:00,027 - INFO - Waiting for napcat API to be ready...
+2025-10-03 18:20:30,076 - WARNING - API not ready after 30 seconds, proceeding anyway...
+2025-10-03 18:20:30,076 - INFO - Send task started
+2025-10-03 18:20:30,076 - INFO - Send task started
+2025-10-03 18:20:30,349 - INFO - Send task completed
+2025-10-03 18:20:30,349 - INFO - Send task completed
+2025-10-03 18:20:30,349 - INFO - Job "Send Task (trigger: cron[hour='18', minute='20'], next run at: 2025-10-04 18:20:00 HKT)" executed successfully
+2025-10-03 18:20:49,868 - INFO - Scheduler stopped
+2025-10-03 18:22:14,305 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-10-03 18:22:14,305 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-10-03 18:22:14,305 - INFO - Minimal Scheduler started - Work: 18:22, Send: 18:30
+2025-10-03 18:22:14,305 - INFO - Added job "Work Task" to job store "default"
+2025-10-03 18:22:14,305 - INFO - Added job "Send Task" to job store "default"
+2025-10-03 18:22:14,305 - INFO - Scheduler started
+2025-10-03 18:23:11,339 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-10-03 18:23:11,339 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-10-03 18:23:11,339 - INFO - Minimal Scheduler started - Work: 18:22, Send: 18:30
+2025-10-03 18:23:11,339 - INFO - Added job "Work Task" to job store "default"
+2025-10-03 18:23:11,339 - INFO - Added job "Send Task" to job store "default"
+2025-10-03 18:23:11,339 - INFO - Scheduler started
+2025-10-03 18:23:41,500 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-10-03 18:23:41,500 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-10-03 18:23:41,500 - INFO - Minimal Scheduler started - Work: 18:24, Send: 18:34
+2025-10-03 18:23:41,500 - INFO - Added job "Work Task" to job store "default"
+2025-10-03 18:23:41,500 - INFO - Added job "Send Task" to job store "default"
+2025-10-03 18:23:41,500 - INFO - Scheduler started
+2025-10-03 18:24:00,000 - INFO - Running job "Work Task (trigger: cron[hour='18', minute='24'], next run at: 2025-10-03 18:24:00 HKT)" (scheduled at 2025-10-03 18:24:00+08:00)
+2025-10-03 18:24:00,003 - INFO - Waiting for napcat API to be ready...
+2025-10-03 18:24:30,051 - WARNING - API not ready after 30 seconds, proceeding anyway...
+2025-10-03 18:24:30,051 - INFO - Work task started
+2025-10-03 18:25:49,875 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-10-03 18:25:49,875 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-10-03 18:25:49,875 - INFO - Minimal Scheduler started - Work: 18:26, Send: 18:34
+2025-10-03 18:25:49,875 - INFO - Added job "Work Task" to job store "default"
+2025-10-03 18:25:49,875 - INFO - Added job "Send Task" to job store "default"
+2025-10-03 18:25:49,875 - INFO - Scheduler started
+2025-10-03 18:26:00,000 - INFO - Running job "Work Task (trigger: cron[hour='18', minute='26'], next run at: 2025-10-03 18:26:00 HKT)" (scheduled at 2025-10-03 18:26:00+08:00)
+2025-10-03 18:26:00,004 - INFO - Waiting for napcat API to be ready...
+2025-10-03 18:26:30,055 - WARNING - API not ready after 30 seconds, proceeding anyway...
+2025-10-03 18:26:30,055 - INFO - Work task started
+2025-10-03 18:31:46,496 - INFO - Work task completed
+2025-10-03 18:31:46,496 - INFO - Job "Work Task (trigger: cron[hour='18', minute='26'], next run at: 2025-10-04 18:26:00 HKT)" executed successfully
+2025-10-03 18:34:00,000 - INFO - Running job "Send Task (trigger: cron[hour='18', minute='34'], next run at: 2025-10-04 18:34:00 HKT)" (scheduled at 2025-10-03 18:34:00+08:00)
+2025-10-03 18:34:00,004 - INFO - Waiting for napcat API to be ready...
+2025-10-03 18:34:30,054 - WARNING - API not ready after 30 seconds, proceeding anyway...
+2025-10-03 18:34:30,054 - INFO - Send task started
+2025-10-03 18:34:30,055 - INFO - Send task started
+2025-10-03 18:34:40,059 - INFO - Send task completed
+2025-10-03 18:34:40,059 - INFO - Send task completed
+2025-10-03 18:34:40,059 - INFO - Job "Send Task (trigger: cron[hour='18', minute='34'], next run at: 2025-10-04 18:34:00 HKT)" executed successfully
+2025-10-03 20:51:13,353 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-10-03 20:51:13,354 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-10-03 20:51:13,354 - INFO - Minimal Scheduler started - Work: 20:51, Send: 20:53
+2025-10-03 20:51:13,354 - INFO - Added job "Work Task" to job store "default"
+2025-10-03 20:51:13,354 - INFO - Added job "Send Task" to job store "default"
+2025-10-03 20:51:13,354 - INFO - Scheduler started
+2025-10-03 20:51:22,198 - INFO - Scheduler stopped
+2025-10-03 20:51:28,265 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-10-03 20:51:28,265 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-10-03 20:51:28,265 - INFO - Minimal Scheduler started - Work: 20:52, Send: 20:54
+2025-10-03 20:51:28,265 - INFO - Added job "Work Task" to job store "default"
+2025-10-03 20:51:28,265 - INFO - Added job "Send Task" to job store "default"
+2025-10-03 20:51:28,265 - INFO - Scheduler started
+2025-10-03 20:52:00,000 - INFO - Running job "Work Task (trigger: cron[hour='20', minute='52'], next run at: 2025-10-03 20:52:00 HKT)" (scheduled at 2025-10-03 20:52:00+08:00)
+2025-10-03 20:52:01,687 - INFO - Waiting for napcat API to be ready...
+2025-10-03 20:52:03,062 - INFO - Scheduler stopped
+2025-10-03 20:52:24,017 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-10-03 20:52:24,017 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-10-03 20:52:24,017 - INFO - Minimal Scheduler started - Work: 20:53, Send: 20:55
+2025-10-03 20:52:24,017 - INFO - Added job "Work Task" to job store "default"
+2025-10-03 20:52:24,017 - INFO - Added job "Send Task" to job store "default"
+2025-10-03 20:52:24,017 - INFO - Scheduler started
+2025-10-03 20:53:00,000 - INFO - Running job "Work Task (trigger: cron[hour='20', minute='53'], next run at: 2025-10-03 20:53:00 HKT)" (scheduled at 2025-10-03 20:53:00+08:00)
+2025-10-03 20:53:07,075 - INFO - Waiting for napcat API to be ready...
+2025-10-03 20:53:37,153 - WARNING - API not ready after 30 seconds, proceeding anyway...
+2025-10-03 20:53:37,153 - INFO - Work task started
+2025-10-03 20:53:52,543 - INFO - Scheduler stopped
+2025-10-03 20:57:56,768 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-10-03 20:57:56,768 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-10-03 20:57:56,768 - INFO - Minimal Scheduler started - Work: 20:53, Send: 20:55
+2025-10-03 20:57:56,768 - INFO - Added job "Work Task" to job store "default"
+2025-10-03 20:57:56,768 - INFO - Added job "Send Task" to job store "default"
+2025-10-03 20:57:56,768 - INFO - Scheduler started
+2025-10-03 20:57:56,896 - INFO - Scheduler stopped
+2025-10-03 20:58:09,739 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-10-03 20:58:09,739 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-10-03 20:58:09,739 - INFO - Minimal Scheduler started - Work: 20:59, Send: 21:01
+2025-10-03 20:58:09,739 - INFO - Added job "Work Task" to job store "default"
+2025-10-03 20:58:09,739 - INFO - Added job "Send Task" to job store "default"
+2025-10-03 20:58:09,739 - INFO - Scheduler started
+2025-10-03 20:59:00,000 - INFO - Running job "Work Task (trigger: cron[hour='20', minute='59'], next run at: 2025-10-03 20:59:00 HKT)" (scheduled at 2025-10-03 20:59:00+08:00)
+2025-10-03 20:59:07,074 - INFO - Waiting for napcat API to be ready...
+2025-10-03 20:59:37,128 - WARNING - API not ready after 30 seconds, proceeding anyway...
+2025-10-03 20:59:37,128 - INFO - Work task started
+2025-10-03 20:59:44,157 - INFO - Scheduler stopped
+2025-10-03 21:00:25,602 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-10-03 21:00:25,602 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-10-03 21:00:25,602 - INFO - Minimal Scheduler started - Work: 20:01, Send: 21:03
+2025-10-03 21:00:25,602 - INFO - Added job "Work Task" to job store "default"
+2025-10-03 21:00:25,602 - INFO - Added job "Send Task" to job store "default"
+2025-10-03 21:00:25,603 - INFO - Scheduler started
+2025-10-03 21:01:13,004 - INFO - Scheduler stopped
+2025-10-03 21:01:21,100 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-10-03 21:01:21,100 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-10-03 21:01:21,100 - INFO - Minimal Scheduler started - Work: 21:02, Send: 21:04
+2025-10-03 21:01:21,101 - INFO - Added job "Work Task" to job store "default"
+2025-10-03 21:01:21,101 - INFO - Added job "Send Task" to job store "default"
+2025-10-03 21:01:21,101 - INFO - Scheduler started
+2025-10-03 21:02:00,000 - INFO - Running job "Work Task (trigger: cron[hour='21', minute='2'], next run at: 2025-10-03 21:02:00 HKT)" (scheduled at 2025-10-03 21:02:00+08:00)
+2025-10-03 21:02:07,074 - INFO - Work task started
+2025-10-03 21:02:07,129 - INFO - Work task completed
+2025-10-03 21:02:07,129 - INFO - Job "Work Task (trigger: cron[hour='21', minute='2'], next run at: 2025-10-04 21:02:00 HKT)" executed successfully
+2025-10-03 21:02:12,534 - INFO - Scheduler stopped
+2025-10-03 21:02:38,116 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-10-03 21:02:38,116 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-10-03 21:02:38,116 - INFO - Minimal Scheduler started - Work: 21:03, Send: 21:05
+2025-10-03 21:02:38,117 - INFO - Added job "Work Task" to job store "default"
+2025-10-03 21:02:38,117 - INFO - Added job "Send Task" to job store "default"
+2025-10-03 21:02:38,117 - INFO - Scheduler started
+2025-10-03 21:03:00,000 - INFO - Running job "Work Task (trigger: cron[hour='21', minute='3'], next run at: 2025-10-03 21:03:00 HKT)" (scheduled at 2025-10-03 21:03:00+08:00)
+2025-10-03 21:03:12,078 - INFO - Work task started
+2025-10-03 21:03:25,916 - INFO - Scheduler stopped
+2025-10-03 21:04:10,632 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-10-03 21:04:10,632 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-10-03 21:04:10,632 - INFO - Minimal Scheduler started - Work: 21:05, Send: 21:07
+2025-10-03 21:04:10,632 - INFO - Added job "Work Task" to job store "default"
+2025-10-03 21:04:10,632 - INFO - Added job "Send Task" to job store "default"
+2025-10-03 21:04:10,632 - INFO - Scheduler started
+2025-10-03 21:05:00,000 - INFO - Running job "Work Task (trigger: cron[hour='21', minute='5'], next run at: 2025-10-03 21:05:00 HKT)" (scheduled at 2025-10-03 21:05:00+08:00)
+2025-10-03 21:05:10,005 - INFO - Work task started
+2025-10-03 21:06:35,118 - INFO - Work task completed
+2025-10-03 21:06:35,118 - INFO - Job "Work Task (trigger: cron[hour='21', minute='5'], next run at: 2025-10-04 21:05:00 HKT)" executed successfully
+2025-10-03 21:07:00,000 - INFO - Running job "Send Task (trigger: cron[hour='21', minute='7'], next run at: 2025-10-04 21:07:00 HKT)" (scheduled at 2025-10-03 21:07:00+08:00)
+2025-10-03 21:07:10,005 - INFO - Send task started
+2025-10-03 21:07:10,005 - INFO - Send task started
+2025-10-03 21:07:10,273 - INFO - Send task completed
+2025-10-03 21:07:10,273 - INFO - Send task completed
+2025-10-03 21:07:10,273 - INFO - Job "Send Task (trigger: cron[hour='21', minute='7'], next run at: 2025-10-04 21:07:00 HKT)" executed successfully
